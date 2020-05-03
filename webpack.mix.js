@@ -18,8 +18,7 @@ mix
   .options({
     processCssUrls: false,
   })
-  .setPublicPath("public")
-  .copy("src/images/**/*", "public/images");
+  .copy("src/images/**/*", "public/");
 
 // Full API
 // mix.js(src, output);

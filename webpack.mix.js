@@ -1,4 +1,4 @@
-let mix = require("laravel-mix");
+const mix = require("laravel-mix");
 const tailwindcss = require("tailwindcss");
 
 /*
@@ -19,7 +19,7 @@ mix
     processCssUrls: false,
   })
   .setPublicPath("public")
-  .copy("src/images/**/*", "public/images");
+  .copy("src/assets/**", "public/assets/");
 
 // Full API
 // mix.js(src, output);

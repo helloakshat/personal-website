@@ -14,12 +14,26 @@
       rel="stylesheet"
     />
   </head>
-  <body class="bg-blue-400 font-primary subpixel-antialiased">
+  <style>
+    @media only screen and (max-width: 900px) {
+      .origami {
+        display: none !important;
+      }
+    }
+  </style>
+  <body class="bg-customBlue font-primary subpixel-antialiased">
     <div
-      class="container p-6 bg-cover h-screen bg-opacity-0 lg: max-w-full"
-      style="background-image: url(public/assets/origami2trans.png); background-size: contain; background-repeat: no-repeat; background-position: 0% 50%;"
+      class="container p-6 bg-cover h-screen lg:max-w-full lg:px-20 md:px-12"
     >
-      <div class="header">
+      <div class="bg-image relative lg:hidden">
+        <img
+          src="public/assets/origami2trans.png"
+          alt="Origamin"
+          class="absolute"
+          style="top: 180px"
+        />
+      </div>
+      <div class="header lg:flex lg:justify-between">
         <div class="logo flex justify-center">
           <img src="public/assets/mobo_logo.png" alt="" class="w-auto pb-4" />
         </div>
@@ -33,35 +47,40 @@
           </ul>
         </div>
       </div>
-      <div class="main">
-        <h1 class="text-5xl leading-tight mt-32">
-          Hey, I am <br />
-          Akshat Gupta
-        </h1>
-        <h3 class="text-3xl pt-4">UI Designer and Web Developer</h3>
-        <div class="social">
-          <ul class="social-menu flex flex-wrap mt-6">
-            <li class="pr-10 pt-1 text-3xl">
-              <a href="#"><i class="fab fa-github"></i></a>
-            </li>
-            <li class="pr-10 pt-1 text-3xl">
-              <a href="#"><i class="fab fa-instagram"></i></a>
-            </li>
-            <li class="pr-10 pt-1 text-3xl">
-              <a href="#"><i class="fab fa-behance"></i></a>
-            </li>
-            <li class="pr-10 pt-1 text-3xl">
-              <a href="#"><i class="fab fa-dribbble"></i></a>
-            </li>
-          </ul>
+      <div class="content flex flex-wrap">
+        <div class="main lg:w-1/2">
+          <h1 class="text-5xl leading-tight mt-32 lg:text-6xl">
+            Hey, I am <br />
+            Akshat Gupta
+          </h1>
+          <h3 class="text-3xl pt-4">UI Designer and Web Developer</h3>
+          <div class="social">
+            <ul class="social-menu flex flex-wrap mt-6">
+              <li class="pr-10 pt-1 text-3xl">
+                <a href="#"><i class="fab fa-github"></i></a>
+              </li>
+              <li class="pr-10 pt-1 text-3xl">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li class="pr-10 pt-1 text-3xl">
+                <a href="#"><i class="fab fa-behance"></i></a>
+              </li>
+              <li class="pr-10 pt-1 text-3xl">
+                <a href="#"><i class="fab fa-dribbble"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="hire">
+            <a href="#">
+              <span
+                class="block p-2 mt-20 bg-red-400 w-40 text-2xl text-center border-black border-solid border-4 rounded-sm"
+                >Hire</span
+              >
+            </a>
+          </div>
         </div>
-        <div class="hire">
-          <a href="#">
-            <span
-              class="block p-2 mt-20 bg-red-400 w-40 text-2xl text-center border-black border-solid border-4 rounded-sm"
-              >Hire</span
-            >
-          </a>
+        <div class="origami lg:w-1/2 mt-20">
+          <img src="public/assets/origami2.png" alt="origami" />
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ["./src/**/*.html", "./src/**/*.vue", "./src/**/*.jsx"],
+  purge: ["src/*.html", "src/*.vue", "src/*.js", "src/*.css"],
   theme: {
     extend: {
       fontFamily: {
@@ -7,6 +7,9 @@ module.exports = {
       },
       colors: {
         customBlue: "#41B0FF",
+        cutomegrey: "#F7F7F7",
+        customblack: "#242424",
+        customecyan: "#11F7FF",
       },
     },
   },
